@@ -8,6 +8,12 @@ public class Main {
 
         Random random = new Random();
 
+        Scanner sn = new Scanner(System.in);
+
+        System.out.println("Who are you?");
+        String name = sn.next();
+        System.out.println("Hello, " + name + "!");
+
         System.out.println("Tossing a coin...");
         for (int toss = 1; toss <= 3; toss++) {
             int result = random.nextInt(2);
